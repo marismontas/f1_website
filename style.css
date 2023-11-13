@@ -1,0 +1,233 @@
+@font-face {
+    font-family: 'Formula1-Regular-1.ttf';
+    src: url('Fonts/Formula1-Regular-1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+#header{    
+    background: #E10600;
+    color: white; /* Set the text color */
+    padding: 10px; /* Adjust the padding as needed */
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+/* LOGO */
+.logo img{
+    width: 100px; /* Set the width of the logo */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    font-family: 'Formula1-Regular-1.ttf', sans-serif;
+    margin-left: 30px;
+}
+
+.nav-links li {
+    margin-right: 20px; /* Adjust the margin between list items */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white; /* Set the color of the navigation links */
+}
+
+.login-button{
+    display: flex;
+    height: 35px;
+    padding: 7px 9px 7.571px 10px;
+    justify-content: right;
+    align-items: center;
+    gap: 9.125px;
+    border-radius: 5px;
+    background: #1F1F27;
+    color: #FFF;
+    box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.50);
+    border-color: transparent;
+    margin-left: auto;
+}
+
+.login-button:hover{
+    background: #38383f;
+}
+
+/* LOG IN PAGE */
+.login-page{ /* BODY PAGE */
+    background-color: #1F1F27;
+}
+
+#login-header{
+    background: #E10600;
+    color: white; /* Set the text color */
+    padding: 10px; /* Adjust the padding as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-logo img {
+    width: 100px; /* Adjust the width as needed for the login page */
+    height: auto;
+}
+
+/* FORM BOX (GLASS BOX) */
+.form-box{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    /* End of glass box */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 512px;
+    height: 420px;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.login-container{
+    position: absolute;
+    left: 4px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    transition: .5s ease-in-out;
+}
+
+.register-container{
+    position: absolute;
+    right: -520px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    transition: .5s ease-in-out;
+}
+
+.two-forms{
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: center; 
+    width: 100%;
+}
+
+.top span{
+    font-family: 'Formula1-Regular-1.ttf', sans-serif;
+    color: #fff;
+    font-size: small;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.top span a{
+    font-family: 'Formula1-Regular-1.ttf', sans-serif;
+    font-weight: 500;
+    color: #fff;
+    margin-left: 5px;
+}
+
+.top header{
+    font-family: 'Formula1-Regular-1.ttf', sans-serif;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px 0 30px 0;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.input-field{
+    font-family: 'Formula1-Regular-1.ttf', sans-serif;
+    font-size: 13px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    height: 50px;
+    width: 75%;
+    padding: 0 15px 0 40px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    transition: .2s ease;
+}
+
+span.eye-icon{
+    position: absolute;
+    top: 59%;
+    left: 84%;
+    cursor: pointer;
+    color: #1F1F27;
+}
+
+span.eye-icon:hover, span.eye-icon:focus{
+    color: #38383f;
+}
+
+.input-field:hover, .input-field:focus{
+    background: rgba(255, 255, 255, 0.25);
+}
+
+/* What's this? */
+::-webkit-input-placeholder{
+    color: #fff;
+}
+
+.submit{
+    font-family: 'Formula1-Regular-1.ttf', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    height: 45px;
+    width: 30%;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.submit:hover{
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+}
+
+.two-col{
+    display: flex;
+    justify-content: space-evenly;
+    color: #fff;
+    font-size: 15px;
+}
+.two-col .one{
+    display: flex;
+    gap: 5px;
+}
+.two label a{
+    text-decoration: none;
+    color: #fff;
+}
+.two label a:hover{
+    text-decoration: underline;
+}
